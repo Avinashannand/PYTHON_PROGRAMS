@@ -15,9 +15,9 @@ import sys
 
 db = pymysql.connect(host="localhost", # your host, usually localhost
 port=3310,
-user="root", # your username
-passwd="paytm@123", # your password
-db="wallet") # name of the data base
+user="****", # your username
+passwd="******", # your password
+db="*********") # name of the data base
 
 print ("Connection established!")
 
@@ -25,7 +25,7 @@ cur = db.cursor()
 
 #cur.execute("select m.id , m.merchant_order_id ,m.payee_id ,m.txn_type, m.create_timestamp from (select id, merchant_order_id, is_settled,payee_id, txn_amount, txn_type, txn_status, create_timestamp, txn_message from new_system_txn_request where (payer_id='9234570080' or payee_id='2325')  order by create_timestamp) m where m.txn_type=1 and m.create_timestamp <(select s.create_timestamp from new_system_txn_request s where s.merchant_order_id='nishant1') order by m.create_timestamp desc limit 1;")
 
-cur.execute("select phone_no,cust_id from user where sso_id = '9234583761'")
+cur.execute("select phone_no, cust_id from user where sso_id = '123445666'")
 
 # fetch all of the rows from the query
 #data = cur.fetchall ()

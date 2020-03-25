@@ -26,14 +26,36 @@
 #print(p1._sum(5,6))
 
 
-class calculation():
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-    def sum(self):
-        return self.a + self.b
+#class calculation():
+#    def __init__(self, a, b):
+#        self.a = a
+#        self.b = b
+#    def sum(self):
+#        return self.a + self.b
 
-a = int(input("Enter the value of a: "))
-b = int(input("Enter the value of b: "))
-obj = calculation(a, b)
-print(obj.sum())
+#a = int(input("Enter the value of a: "))
+#b = int(input("Enter the value of b: "))
+#obj = calculation(a, b)
+#print(obj.sum())
+
+'''def g(m,n):
+    res = 0
+    while m >= n:
+        (res,m) = (res+1,m/n)
+    return(res)
+
+print(g(637,4))'''
+
+a = int(input("Enter the value: "))
+print(a)
+
+
+
+
+
+
+
+
+
+
+
